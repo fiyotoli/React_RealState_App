@@ -32,7 +32,7 @@ const PropertyDetail = () => {
   };
 
   return (
-    <div className="container-fluid pt-5">
+    <div className="container-fluid pt-5 mt-5">
       <div className="row  p-4">
         <div className="col-md-6">
           <img 
