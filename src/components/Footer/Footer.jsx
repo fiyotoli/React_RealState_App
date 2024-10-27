@@ -73,8 +73,8 @@ const Footer = () => {
 
           {/* Column 3 */}
           <div className="col-md-3 mb-3">
-            <h5 className="mb-3">Contact</h5>
-            <p className="mb-0"><FaMapMarkerAlt className="me-2" />123 Real Estate St., City, State, ZIP</p>
+            <h5 className="mb-3">Contact</h5> 
+            <p className="mb-0"><FaMapMarkerAlt className="me-2" />123 Real Estate, Addis Ababa, Ethiopia</p>
             <p className="mb-0"><FaPhoneAlt className="me-2" /> (123) 456-7890</p>
             <p className="mb-0"><FaEnvelope className="me-2" /> info@realestateworld.com</p>
           </div>

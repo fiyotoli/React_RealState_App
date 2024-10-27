@@ -11,14 +11,14 @@ const Services = () => {
         {/* Card 1 - Slide In */}
         <div className="col-md-6 col-lg-4 mb-4">
           <motion.div
-            initial={{ y: -50, opacity: 0 }} // Start position and opacity
-            whileInView={{ y: 0, opacity: 1 }} // End position and opacity when in view
-            transition={{ duration: 0.7 }} // Animation duration
-            viewport={{ once: false }} // This allows the animation to trigger every time the element enters the viewport
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: false }}
             className="card shadow-sm"
           >
             <div className="card-body text-center">
-              <FaBuilding className="text-success mb-3" size={40} /> {/* Icon above the title */}
+              <FaBuilding className="text-success mb-3" size={40} />
               <h5 className="card-title text-success">Property Listing</h5>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-center mb-2">
@@ -41,14 +41,14 @@ const Services = () => {
         {/* Card 2 - Fade Out */}
         <div className="col-md-6 col-lg-4 mb-4">
           <motion.div
-            initial={{ opacity: 0 }} // Start with full opacity
-            whileInView={{ opacity: 1 }} // Fade out when in view
-            transition={{ duration: 0.7 }} // Animation duration
-            viewport={{ once: false }} // This allows the animation to trigger every time the element enters the viewport
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: false }}
             className="card shadow h-100 border border-success"
           >
             <div className="card-body text-center">
-              <FaUsersCog className="text-success mb-3" size={70} /> {/* Icon above the title */}
+              <FaUsersCog className="text-success mb-3" size={70} />
               <h5 className="card-title text-success">Consultation Services</h5>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-center mb-2">
@@ -71,14 +71,14 @@ const Services = () => {
         {/* Card 3 - Slide In */}
         <div className="col-md-6 col-lg-4 mb-4">
           <motion.div
-            initial={{ y: -50, opacity: 0 }} // Start position and opacity
-            whileInView={{ y: 0, opacity: 1 }} // End position and opacity when in view
-            transition={{ duration: 0.7 }} // Animation duration
-            viewport={{ once: false }} // This allows the animation to trigger every time the element enters the viewport
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: false }}
             className="card shadow-sm"
           >
             <div className="card-body text-center">
-              <FaRegHandshake className="text-success mb-3" size={40} /> {/* Icon above the title */}
+              <FaRegHandshake className="text-success mb-3" size={40} />
               <h5 className="card-title text-success">Customer Support</h5>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-center mb-2">

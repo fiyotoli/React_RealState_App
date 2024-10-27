@@ -10,7 +10,9 @@ import modernCondo1 from './assets/condo1.jpg';
 import beachfrontVilla from './assets/villa.jpg';
 import beachfrontVilla1 from './assets/villa1.jpg';
 import penthouseSuite from './assets/penthouse.jpg';
-import penthouseLuxury1 from './assets/penthose1.jpg';
+
+import penthouseLuxury from './assets/penthose.jpg';
+import penthouseLuxury1 from './assets/penthose2.jpg';
 import penthouseLuxury2 from './assets/penthose2.jpg';
 
 const properties = [
@@ -68,7 +70,7 @@ const properties = [
     id: 6,
     title: "Penthouse Luxury",
     description: "Step into a world of sophistication with our Modern Condo, a stylish retreat designed for contemporary living. Nestled in a vibrant neighborhood, this condo offers the perfect blend of comfort and convenience. With its open floor plan, the spacious living area is flooded with natural light, creating an inviting atmosphere for relaxation and entertainment.",
-    image: penthouseLuxury1,
+    image: penthouseLuxury,
     price: "$1,000,000",
     location: "Suburb",
     category: "Penthouse",
@@ -118,7 +120,7 @@ const properties = [
     id: 11,
     title: "Penthouse Suite",
     description: "Step into a world of sophistication with our Modern Condo, a stylish retreat designed for contemporary living. Nestled in a vibrant neighborhood, this condo offers the perfect blend of comfort and convenience. With its open floor plan, the spacious living area is flooded with natural light, creating an inviting atmosphere for relaxation and entertainment.",
-    image: penthouseSuite,
+    image: penthouseLuxury1,
     price: "$20,000,000",
     location: "City Center",
     category: "Penthouse",

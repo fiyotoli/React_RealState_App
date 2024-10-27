@@ -4,7 +4,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram
 
 const Contact = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5 ">
       <div className="row">
         {/* Form Section (Left) */}
         <div className="col-md-6 bg-success bg-opacity-10 p-5 rounded">
@@ -43,7 +43,7 @@ const Contact = () => {
             </li>
             <li className="mb-3">
               <FaMapMarkerAlt className="text-success me-2" /> 
-              <span className="text-muted">123 Real Estate St., City, Country</span>
+              <span className="text-muted">123 Real Estate,Addis Ababa, Ethiopia</span>
             </li>
           </ul>
           
