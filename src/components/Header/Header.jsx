@@ -84,7 +84,7 @@ const Header = () => {
               navigate('/contact'); // Navigate to contact page
             }}
           >
-            Contact Me
+            Contact Us
           </Button>
         </Navbar.Collapse>
       </Container>

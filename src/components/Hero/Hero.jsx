@@ -54,10 +54,16 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }} 
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <Link to="/property" className="btn btn-success btn-lg">
+          <Link to="/property" className="btn btn-success btn-lg d-none d-md-inline">
             View Properties
           </Link>
-          <Link to="/contact" className="btn btn-outline-light btn-lg">
+          <Link to="/contact" className="btn btn-outline-light btn-lg d-none d-md-inline">
+            Contact Us
+          </Link>
+          <Link to="/property" className="btn btn-success btn-sm d-inline d-md-none">
+            View Properties
+          </Link>
+          <Link to="/contact" className="btn btn-outline-light btn-sm d-inline d-md-none">
             Contact Us
           </Link>
         </motion.div>

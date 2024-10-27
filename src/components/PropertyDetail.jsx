@@ -39,7 +39,7 @@ const PropertyDetail = () => {
             src={property.image} 
             className="img-fluid" 
             alt={property.title} 
-            style={{ height: 'auto', objectFit: 'cover' }} 
+            style={{ height: '500px', width:"100%", objectFit: 'cover' }} 
           />
         </div>
         <div className="col-md-6 d-flex flex-column justify-content-between">
