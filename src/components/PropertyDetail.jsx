@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import propertyList from '../propertyList.json';
+import propertyList from '../propertyList.js';
 import { FaMapMarkerAlt } from 'react-icons/fa'; // Importing location icon
 
 const PropertyDetail = () => {
@@ -39,7 +39,7 @@ const PropertyDetail = () => {
             src={property.image} 
             className="img-fluid" 
             alt={property.title} 
-            style={{ height: '400px', objectFit: 'cover' }} 
+            style={{ height: 'auto', objectFit: 'cover' }} 
           />
         </div>
         <div className="col-md-6 d-flex flex-column justify-content-between">
@@ -57,11 +57,12 @@ const PropertyDetail = () => {
                 {property.location}
               </span>
             </p>
+            <Link to="/property" className="btn btn-outline-success me-2 my-2">Back to Property</Link>
+            <button className="btn btn-success rounded-pill my-2" onClick={handleBooking}>Book Now</button>
+         
           </div>
           <div className="mt-3">
-            <Link to="/property" className="btn btn-outline-success me-2">Back to Property</Link>
-            <button className="btn btn-success rounded-pill" onClick={handleBooking}>Book Now</button>
-          </div>
+            </div>
         </div>
       </div>
 <div className='container'>

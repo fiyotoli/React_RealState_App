@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PropertyList from './components/PropertyList';
 import PropertyDetail from './components/PropertyDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Footer from './components/Footer/Footer';
-import { Spinner } from 'react-bootstrap'; // Importing Bootstrap Spinner
 import { FaArrowAltCircleUp } from 'react-icons/fa'; // Importing Up Arrow Icon
 import NotFound from './pages/NotFound/NotFound'; // Importing Not Found Page
 import Header from './components/Header/Header';
@@ -34,8 +32,19 @@ const App = () => {
             <div>
                 <Header />
                 {loading ? (
-                    <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-                        <Spinner animation="border" variant="success" />
+                    <div className="d-flex justify-content-center align-items-center flex-column" style={{ height: '100vh' }}>
+                        <div className="d-flex justify-content-center gap-2"> {/* Adjusted gap for better spacing */}
+                            {/* First Spinner Button */}
+                            <button className="btn btn-success" type="button" disabled>
+                                <span className="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                                <span className="visually-hidden" role="status">Loading...</span>
+                            </button>
+                            {/* Second Spinner Button */}
+                            <button className="btn btn-success" type="button" disabled>
+                                <span className="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                                <span role="status">Loading...</span>
+                            </button>
+                        </div>
                     </div>
                 ) : (
                     <Routes>
@@ -50,11 +59,10 @@ const App = () => {
                 <Footer />
                 <button
                     onClick={scrollToTop}
-                    className="btn btn-success "
+                    className="btn btn-success"
                     style={{
                         position: 'fixed',
                         bottom: '20px',
-                       
                         right: '20px',
                         display: loading ? 'none' : 'block' // Hide when loading
                     }}

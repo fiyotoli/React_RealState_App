@@ -1,0 +1,9 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Apply Poppins font to all elements */
+* {
+  font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if Poppins is not available */
+}
+
+/* Additional styles can go here */

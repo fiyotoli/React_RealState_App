@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaCheckCircle, FaHome, FaUserFriends } from 'react-icons/fa'; // Importing icons from react-icons
 import aboutImage from '../../assets/about-image.jpg'; // Adjust the path according to your folder structure
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
 
 const About = () => {
   return (
@@ -23,84 +22,40 @@ const About = () => {
             About <span className='text-muted'>Us</span>
           </h2>
 
-          {/* Combined Motion for Subtitle and Paragraph */}
-          <motion.div
-            initial={{ x: 50, opacity: 0 }} // Start position and opacity
-            whileInView={{ x: 0, opacity: 1 }} // End position and opacity when in view
-            transition={{ duration: 0.6 }} // Animation duration
-            viewport={{ once: false }} // This allows the animation to trigger every time the element enters the viewport
-          >
+          {/* Removed Motion for Subtitle and Paragraph */}
+          <div>
             <p className="lead">
               We are dedicated to helping you find your dream property. Our team of experienced professionals is here to assist you every step of the way.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-4">
-            {/* Individual Items with Sequential Animations */}
+            {/* Individual Items without Animations */}
             <div className="d-flex align-items-center mb-3">
               <FaCheckCircle className="text-success me-2" size={24} />
               <div>
-                <motion.span
-                  initial={{ x: 50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.6 }} // Sequential delay for the heading
-                  viewport={{ once: false }} // Allow the animation to trigger every time the element enters the viewport
-                >
-                  Expert Guidance
-                </motion.span>
-                <motion.p
-                  className="text-muted"
-                  initial={{ x: 50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.6 }} // Sequential delay for the paragraph
-                  viewport={{ once: false }} // Allow the animation to trigger every time the element enters the viewport
-                >
+                <span>Expert Guidance</span>
+                <p className="text-muted">
                   Receive professional advice from our skilled agents.
-                </motion.p>
+                </p>
               </div>
             </div>
             <div className="d-flex align-items-center mb-3">
               <FaHome className="text-success me-2" size={24} />
               <div>
-                <motion.span
-                  initial={{ x: 50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.8 }} // Sequential delay for the heading
-                  viewport={{ once: false }} // Allow the animation to trigger every time the element enters the viewport
-                >
-                  Wide Property Selection
-                </motion.span>
-                <motion.p
-                  className="text-muted"
-                  initial={{ x: 50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.8 }} // Sequential delay for the paragraph
-                  viewport={{ once: false }} // Allow the animation to trigger every time the element enters the viewport
-                >
+                <span>Wide Property Selection</span>
+                <p className="text-muted">
                   Explore a diverse range of properties to suit your needs.
-                </motion.p>
+                </p>
               </div>
             </div>
             <div className="d-flex align-items-center mb-3">
               <FaUserFriends className="text-success me-2" size={24} />
               <div>
-                <motion.span
-                  initial={{ x: 50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 1.0 }} // Sequential delay for the heading
-                  viewport={{ once: false }} // Allow the animation to trigger every time the element enters the viewport
-                >
-                  Customer-Centric Approach
-                </motion.span>
-                <motion.p
-                  className="text-muted"
-                  initial={{ x: 50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 1.0 }} // Sequential delay for the paragraph
-                  viewport={{ once: false }} // Allow the animation to trigger every time the element enters the viewport
-                >
+                <span>Customer-Centric Approach</span>
+                <p className="text-muted">
                   We prioritize your needs and preferences at every step.
-                </motion.p>
+                </p>
               </div>
             </div>
           </div>

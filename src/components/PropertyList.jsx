@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa'; // Importing icons
+import { FaMapMarkerAlt } from 'react-icons/fa'; // Importing only the map marker icon
 import { Link } from 'react-router-dom';
-import propertyList from '../propertyList.json'; // Importing property list from JSON
+import propertyList from '../propertyList.js'; // Importing property list from JSON
 
 const PropertyList = () => {
   const [searchTerm, setSearchTerm] = useState(''); // State for search input
@@ -42,20 +42,19 @@ const PropertyList = () => {
 
   return (
     <div className="container mt-5 pt-5">
-      <h2 className="text-center text-success display-5 mb-4">Property <span className='text-muted'>Listings</span> </h2>
+      <h2 className="text-center text-success display-5 mb-4">Property <span className='text-muted'>Listings</span></h2>
 
-      {/* Search Input with Icon */}
-      <div className="input-group mb-3 shadow-sm 8 " >
-        <span className="input-group-text bg-success text-white">
-          <FaSearch />
-        </span>
-        <input
-          type="text"
-          className="form-control "
-          placeholder="Search by title..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
+      {/* Search Input Centered in a col-md-6 */}
+      <div className="row mb-3 justify-content-center">
+        <div className="col-md-10 col-lg-6 mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search by title..."
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+        </div>
       </div>
 
       {/* Filter Options */}
@@ -73,7 +72,7 @@ const PropertyList = () => {
         </div>
 
         {/* Location Filter */}
-        <div className="col-md-6 col-lg-4  mb-3">
+        <div className="col-md-6 col-lg-4 mb-3">
           <select className="form-select shadow-sm" value={selectedLocation} onChange={handleLocationChange}>
             <option value="">All Locations</option>
             <option value="Downtown">Downtown</option>

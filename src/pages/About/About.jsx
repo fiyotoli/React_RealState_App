@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaHandshake, FaHome, FaBuilding, FaBullseye, FaUserTie, FaCalendarAlt, FaGlobe, FaHeart } from 'react-icons/fa';
+import { FaHandshake, FaHome, FaBuilding, FaBullseye, FaUserTie, FaCalendarAlt } from 'react-icons/fa';
+import { AiOutlineTeam } from 'react-icons/ai'; // Correct import for AiOutlineTeam
 import buildingImage from '../../assets/real-estate-building.jpg'; // Adjust the path if needed
 
 const About = () => {
@@ -84,7 +85,7 @@ const About = () => {
           {/* Card 3: Core Values */}
           <div className="col-md-6 col-lg-4 mb-3">
             <div className="card shadow text-center text-muted p-3">
-              <FaHeart className="text-success mb-3" size={36} />
+              <AiOutlineTeam className="text-success mb-3" size={36} />
               <h4 className="mb-3">Core Values</h4>
               <p className="text-muted">
                 Integrity, transparency, and commitment are our core values. We aim to foster trust and build lasting relationships with all our clients.
