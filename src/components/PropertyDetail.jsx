@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import propertyList from '../propertyList.js';
+import propertyList from '../propertyList.jsx';
 import { FaMapMarkerAlt } from 'react-icons/fa'; // Importing location icon
 
 const PropertyDetail = () => {

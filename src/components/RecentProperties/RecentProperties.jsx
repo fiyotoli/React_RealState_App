@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt } from 'react-icons/fa'; // Importing location icon
-import propertyList from '../../propertyList.js'; // Importing property list from JSON
+import propertyList from '../../propertyList.jsx'; // Importing property list from JSON
 
 const RecentProperties = () => {
   const [showMore, setShowMore] = useState(false); // State to control "Explore More" or "Explore Less"

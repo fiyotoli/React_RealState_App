@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaMapMarkerAlt } from 'react-icons/fa'; // Importing only the map marker icon
 import { Link } from 'react-router-dom';
-import propertyList from '../propertyList.js'; // Importing property list from JSON
+import propertyList from '../propertyList.jsx'; // Importing property list from JSON
 
 const PropertyList = () => {
   const [searchTerm, setSearchTerm] = useState(''); // State for search input
