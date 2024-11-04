@@ -42,8 +42,7 @@ const PropertyList = () => {
 
   return (
     <div className="container mt-5 pt-5">
-      <h2 className="text-center text-success display-5 mb-4">Property <span className='text-muted'>Listings</span></h2>
-
+      
       {/* Search Input Centered in a col-md-6 */}
       <div className="row mb-3 justify-content-center">
         <div className="col-md-10 col-lg-6 mb-3">

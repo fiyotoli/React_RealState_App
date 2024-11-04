@@ -1,75 +1,36 @@
-import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Hero.css'; // Import the custom CSS for the background image
+// Hero.jsx
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Import motion from Framer Motion
+import heroImage from '../../assets/hero.jpg'; // Import your image
 
 const Hero = () => {
-  const [heroHeight, setHeroHeight] = useState('100vh'); // Default height for large screens
+    return (
+        <div className="container d-flex my-5 py-5 align-items-center justify-content-center">
+            <div className="row">
+                {/* Left Section: Text */}
+                <div className="col-md-6 mb-3 d-flex flex-column align-items-start justify-content-center">
+                    <h1 className="display-4 fw-bold">
+                        <span className="text-success">Find Your Dream Home</span> with Us
+                    </h1>
+                    <p className="lead text-muted">
+                        Explore a wide range of properties tailored to your needs. From cozy apartments to luxury homes, let us help you find the perfect place.
+                    </p>
+                    <Link to="/property" className="btn btn-success fs-5 p-2">
+                        View Listings
+                    </Link>
+                </div>
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 992) { // Bootstrap's 'lg' breakpoint is 992px
-        setHeroHeight('50vh'); // Set height for medium and smaller screens
-      } else {
-        setHeroHeight('100vh'); // Set height for large screens
-      }
-    };
-
-    handleResize(); // Set initial height
-    window.addEventListener('resize', handleResize); // Listen for resize events
-
-    return () => {
-      window.removeEventListener('resize', handleResize); // Cleanup event listener
-    };
-  }, []);
-
-  return (
-    <section className="hero d-flex flex-column mt-5 pt-5 justify-content-center align-items-center" style={{ height: heroHeight, marginTop: '56px' }}>
-      <div className="container text-center">
-        {/* Fade in from top */}
-        <motion.h1 
-          className="display-2 text-white fw-bold" 
-          initial={{ y: -50, opacity: 0 }} 
-          animate={{ y: 0, opacity: 1 }} 
-          transition={{ duration: 1, delay: 0.2 }}
-        >
-          Welcome to <span className='text-success'>Real Estate</span> World
-        </motion.h1>
-
-        {/* Fade in from left */}
-        <motion.p 
-          className="lead col-lg-8 mx-auto" 
-          initial={{ x: -50, opacity: 0 }} 
-          animate={{ x: 0, opacity: 1 }} 
-          transition={{ duration: 1, delay: 0.4 }}
-        >
-          Discover your dream property with us. Explore the best properties for rent and purchase.
-        </motion.p>
-
-        {/* Buttons fade in from bottom */}
-        <motion.div 
-          className="d-flex justify-content-center gap-3" 
-          initial={{ y: 50, opacity: 0 }} 
-          animate={{ y: 0, opacity: 1 }} 
-          transition={{ duration: 1, delay: 0.6 }}
-        >
-          <Link to="/property" className="btn btn-success btn-lg d-none d-md-inline">
-            View Properties
-          </Link>
-          <Link to="/contact" className="btn btn-outline-light btn-lg d-none d-md-inline">
-            Contact Us
-          </Link>
-          <Link to="/property" className="btn btn-success btn-sm d-inline d-md-none">
-            View Properties
-          </Link>
-          <Link to="/contact" className="btn btn-outline-light btn-sm d-inline d-md-none">
-            Contact Us
-          </Link>
-        </motion.div>
-      </div>
-    </section>
-  );
+                {/* Right Section: Image */}
+                <div className="col-md-6 mb-3 d-flex align-items-center justify-content-center">
+                    <img
+                        src={heroImage}
+                        alt="Beautiful home exterior"
+                        className="img-fluid rounded" // Bootstrap class for responsive image and rounded corners
+                    />
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default Hero;
