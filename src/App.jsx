@@ -28,7 +28,7 @@ const App = () => {
     };
 
     return (
-        <Router>
+        <Router basename="/React_RealState_App">
             <div>
                 <Header />
                 {loading ? (
