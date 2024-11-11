@@ -48,7 +48,7 @@ const PropertyList = () => {
         <div className="col-md-10 col-lg-6 mb-3">
           <input
             type="text"
-            className="form-control"
+            className="form-control input"
             placeholder="Search by title..."
             value={searchTerm}
             onChange={handleSearch}

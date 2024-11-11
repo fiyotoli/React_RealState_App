@@ -21,7 +21,7 @@ const NewsletterSubscription = () => {
           <div className="input-group mb-3">
             <input
               type="email"
-              className="form-control"
+              className="form-control input"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
